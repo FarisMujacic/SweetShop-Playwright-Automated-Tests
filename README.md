@@ -25,10 +25,10 @@ Main functionalities covered:
 - **TC_01** – Add single product to basket
 
 ### Regression Tests
-- **TC_03** – Login accepts valid email format
-- **TC_04** – Login blocks invalid email format
-- **TC_06** – Empty basket clears all items
-- **TC_08** – Delivery option changes total price
+- **TC_03** – Login accepts valid email format  
+- **TC_04** – Login blocks invalid email format  
+- **TC_06** – Empty basket clears all items  
+- **TC_08** – Delivery option changes total price  
 
 All tests are implemented using the **Page Object Model (POM)** design pattern for better maintainability and readability.
 
