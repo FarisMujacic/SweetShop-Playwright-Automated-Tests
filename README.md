@@ -1,3 +1,4 @@
+````markdown
 # SweetShop – Playwright Automated Testing
 
 Automated UI tests created for the **Software Testing and Maintenance** course.
@@ -50,4 +51,13 @@ It is recommended to open the project directly in **Visual Studio Code** so that
 1. Install project dependencies:
    ```bash
    npm install
+````
 
+2. Install Playwright browsers:
+
+   ```bash
+   npx playwright install
+   ```
+
+```
+```
