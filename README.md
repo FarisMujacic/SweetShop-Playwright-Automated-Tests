@@ -36,39 +36,41 @@ All tests are implemented using the **Page Object Model (POM)** design pattern t
 
 ## Technologies
 
- 
+### Visual Studio Code (IDE)
+Install VS Code from the official website:  
+- https://code.visualstudio.com/
 
-### Visual Studio - IDE 
-To install Visual Studio use following [website](https://visualstudio.microsoft.com/)
+### Node.js and npm
+Install Node.js (npm is included with Node.js):  
+- https://nodejs.org/en/
 
- 
-
-### Node.js and node package manager (npm)
-To install Node.js use following [website](https://nodejs.org/en/)
-To install node package manager, in project terminal write:
+Install project dependencies inside the project folder:
 ```bash
 npm install
-```
+
 
 
 ### Playwright 
 To install Playwright use the following npm command in project terminal
 ```bash
-npm install playwright@latest
+npm init playwright@latest
 ```
 alternatively you may use the VSCode extension: [website](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright)
 
 
- 
 
-## How to run tests 
-It is advisable to open project directly in Visual studio, therefore in terminal cd path will be automatically set up. 
-### All tests 
-If one wants to run entire test suite, it can be done by following command:
+
+## How to Run Tests
+
+It is recommended to open the project directly in **Visual Studio Code**, so the terminal opens in the correct project directory.
+
+### All tests
+Run the entire test suite:
 ```bash
-npx playwright test 
+npx playwright test
+
 ```
-### Test suites
+### Test suites (run a folder)
 If one wants to run a specific set of tests , it can be done by the following command:
 ```bash
 npx playwright test tests/<directory-name>/
@@ -79,11 +81,11 @@ If one wants to run single test, it can be done by following command:
 ```bash
 npx playwright test <filename> 
 ```
-Example for featured-item.js:
+Example:
 ```bash
-npx playwright test featured-item.test.js
+npx playwright test tests/regression/tc06-empty-basket.spec.ts
 ```
-Note: some tests need to run in headed mode in order to test the site properly. If a test fails try adding --headed to the command, like this:
+Some tests may be easier to debug or more stable in headed mode. If a test fails, try adding --headed:
 ```bash
-npx playwright test featured-item.test.js --headed
+npx playwright test tests/regression/tc06-empty-basket.spec.ts --headed
 ```
