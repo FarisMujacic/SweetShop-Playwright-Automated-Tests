@@ -57,7 +57,7 @@ It is recommended to open the project directly in **Visual Studio Code** so that
    npx playwright install
    ---
 
-   ## How to Run Tests
+## How to Run Tests
 It is recommended to open the project directly in **Visual Studio Code**, so the terminal path is set automatically.
 
 ### All tests
