@@ -47,7 +47,7 @@ Install Node.js (npm is included with Node.js):
 Install project dependencies inside the project folder:
 ```bash
 npm install
-
+```
 
 
 ### Playwright 
