@@ -34,34 +34,56 @@ All tests are implemented using the **Page Object Model (POM)** design pattern t
 
 ---
 
-## Technologies Used
+## Technologies
 
-- **Visual Studio Code** (IDE)
-- **Node.js** and **npm**
-- **Playwright**
-- **TypeScript**
+ 
 
----
+### Visual Studio - IDE 
+To install Visual Studio use following [website](https://visualstudio.microsoft.com/)
 
-## Installation and Setup
+ 
 
-It is recommended to open the project directly in **Visual Studio Code** so that the terminal path is set automatically.
-
-1. Install project dependencies:
-   ```bash
-   npm install
-   ---
-
-2. Install Playwright browsers:
-   ```bash
-   npx playwright install
-   ---
-
-## How to Run Tests
-It is recommended to open the project directly in **Visual Studio Code**, so the terminal path is set automatically.
-
-### All tests
-Run the entire test suite:
+### Node.js and node package manager (npm)
+To install Node.js use following [website](https://nodejs.org/en/)
+To install node package manager, in project terminal write:
 ```bash
-npx playwright test
+npm install
+```
 
+
+### Playwright 
+To install Playwright use the following npm command in project terminal
+```bash
+npm install playwright@latest
+```
+alternatively you may use the VSCode extension: [website](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright)
+
+
+ 
+
+## How to run tests 
+It is advisable to open project directly in Visual studio, therefore in terminal cd path will be automatically set up. 
+### All tests 
+If one wants to run entire test suite, it can be done by following command:
+```bash
+npx playwright test 
+```
+### Test suites
+If one wants to run a specific set of tests , it can be done by the following command:
+```bash
+npx playwright test tests/<directory-name>/
+```
+Most tests will fail this way, because of the slow and buggy nature of the website. It is advisable to run tests individually.
+### Single test 
+If one wants to run single test, it can be done by following command:
+```bash
+npx playwright test <filename> 
+```
+Example for featured-item.js:
+```bash
+npx playwright test featured-item.test.js
+```
+Note: some tests need to run in headed mode in order to test the site properly. If a test fails try adding --headed to the command, like this:
+```bash
+npx playwright test featured-item.test.js --headed
+```
