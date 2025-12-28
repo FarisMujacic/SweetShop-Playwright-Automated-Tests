@@ -50,3 +50,9 @@ It is recommended to open the project directly in **Visual Studio Code** so that
 1. Install project dependencies:
    ```bash
    npm install
+   ---
+
+2. Install Playwright browsers:
+   ```bash
+   npx playwright install
+
