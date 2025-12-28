@@ -56,3 +56,13 @@ It is recommended to open the project directly in **Visual Studio Code** so that
    ```bash
    npx playwright install
 
+
+   ## How to Run Tests
+It is recommended to open the project directly in **Visual Studio Code**, so the terminal path is set automatically.
+
+### All tests
+Run the entire test suite:
+```bash
+npx playwright test
+
+
