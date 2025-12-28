@@ -1,4 +1,3 @@
-````markdown
 # SweetShop – Playwright Automated Testing
 
 Automated UI tests created for the **Software Testing and Maintenance** course.
